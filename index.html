@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IORE ZIA // A. PABLEO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grid-bg" id="gridBg" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow mono"><span id="statusText">[ PLAYER READY ]</span></div>
+
+    <h1 class="name-line pixel" id="nameLine">
+      <span class="glitch-wrap">
+        <span class="glitch" data-text="IORE ZIA" id="glitchName">IORE ZIA</span>
+      </span>
+      <span class="last">A. PABLEO</span>
+    </h1>
+
+    <p class="tagline">2nd year <b>BIndTech</b> — Computer Technology @ Lapu-Lapu City College. Still grinding the basics: code, circuits, and everything wired in between.</p>
+
+    <div class="readout">
+      <div class="seg-display" id="segAge" aria-hidden="true">19</div>
+      <div class="readout-label">LVL / AGE
+        <span>Cebu, Philippines</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue mono" aria-hidden="true">▼ PRESS TO CONTINUE</div>
+  </section>
+
+  <!-- ---------- GAME MENU ---------- -->
+  <section id="menu" class="reveal">
+    <div class="section-label pixel">SELECT A FILE</div>
+    <div class="cmd-grid">
+      <button class="cmd-card" type="button" data-modal="about-modal">
+        <span class="cmd-cursor mono" aria-hidden="true">▶</span>
+        <span class="cmd-text">
+          <span class="cmd-title mono">ABOUT_ME.EXE</span>
+          <span class="cmd-sub">who's running this build</span>
+        </span>
+        <span class="cmd-tag mono">OPEN</span>
+      </button>
+
+      <button class="cmd-card" type="button" data-modal="learning-modal">
+        <span class="cmd-cursor mono" aria-hidden="true">▶</span>
+        <span class="cmd-text">
+          <span class="cmd-title mono">SKILL_TREE.LOG</span>
+          <span class="cmd-sub">what I'm leveling up right now</span>
+        </span>
+        <span class="cmd-tag mono">OPEN</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="connect" class="reveal">
+    <div class="section-label pixel">LINKS.SYS</div>
+    <h2 class="pixel-sub">catch me here</h2>
+    <div class="ports">
+      <a class="port" href="https://www.facebook.com/share/191mma5JQS/" target="_blank" rel="noopener noreferrer">
+        <div class="port-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg>
+        </div>
+        <div class="port-text">
+          <div class="port-name mono">FACEBOOK</div>
+          <div class="port-handle">profile</div>
+        </div>
+        <span class="port-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="port" href="https://www.tiktok.com/@pableozczzx?_r=1&_t=ZS-98DQ547rNoL" target="_blank" rel="noopener noreferrer">
+        <div class="port-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.9 2.9 0 1 1-2.1-2.8V9.3a6 6 0 1 0 5.1 5.9V9.7a7.6 7.6 0 0 0 4.5 1.4V8a4.6 4.6 0 0 1-4.5-4.6V2z"/></svg>
+        </div>
+        <div class="port-text">
+          <div class="port-name mono">TIKTOK</div>
+          <div class="port-handle">@pableozczzx</div>
+        </div>
+        <span class="port-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="port" href="https://youtube.com/@rydenscript?si=A22N-NfZ42Cl3B8n" target="_blank" rel="noopener noreferrer">
+        <div class="port-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2s-.2-1.5-.8-2.1c-.8-.8-1.7-.8-2.1-.9C15.9 4 12 4 12 4s-3.9 0-6.7.2c-.4 0-1.3.1-2.1.9-.6.6-.8 2.1-.8 2.1S2.2 9 2.2 10.7v1.9c0 1.7.2 3.5.2 3.5s.2 1.5.8 2.1c.8.8 1.9.8 2.3.9 1.7.1 7.5.2 7.5.2s3.9 0 6.7-.2c.4 0 1.3-.1 2.1-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1.9c0-1.7-.2-3.5-.2-3.5zM9.9 14.6V8.9l5.4 2.9-5.4 2.8z"/></svg>
+        </div>
+        <div class="port-text">
+          <div class="port-name mono">YOUTUBE</div>
+          <div class="port-handle">@rydenscript</div>
+        </div>
+        <span class="port-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="mono">
+    &lt;/&gt; made by Iore Zia A. Pableo — Cebu, PH — GAME OVER? NAH, STILL PLAYING
+  </footer>
+
+</div>
+
+<!-- ---------- MODALS ---------- -->
+<div class="modal-overlay" id="modalOverlay">
+
+  <div class="modal" id="about-modal" role="dialog" aria-modal="true" aria-labelledby="about-modal-title" tabindex="-1">
+    <div class="modal-head">
+      <span class="modal-file mono">&gt; ABOUT_ME.EXE</span>
+      <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <h2 id="about-modal-title" class="pixel-sub">building the fundamentals first</h2>
+      <p>I'm currently on my first semester of A.Y. 2026–2027 — Networks and Internet Technology, Web Design and Development, Object-Oriented Programming, Microprocessors and Microcontrollers, all loaded up.</p>
+      <p class="muted">My skills are still basic, not gonna front — but I'm putting in the reps: writing Java, wiring circuits in the lab, figuring out how networks actually work under the hood. End goal: get into computer repair and programming, and build something stable for my family along the way.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="learning-modal" role="dialog" aria-modal="true" aria-labelledby="learning-modal-title" tabindex="-1">
+    <div class="modal-head">
+      <span class="modal-file mono">&gt; SKILL_TREE.LOG</span>
+      <button class="modal-close" type="button" data-close aria-label="Close">×</button>
+    </div>
+    <div class="modal-body">
+      <h2 id="learning-modal-title" class="pixel-sub">currently grinding</h2>
+      <div class="board">
+        <div class="chip">
+          <div class="chip-title">Java Programming</div>
+          <div class="chip-desc">Sorting algorithms, number theory drills, clean modular methods.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-title">Microprocessors & Circuits</div>
+          <div class="chip-desc">DIP switches, seven-segment displays, binary logic — hands in the lab.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-title">Networking</div>
+          <div class="chip-desc">Home network setups, router config, how the internet actually connects.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-title">Web Development</div>
+          <div class="chip-desc">HTML, CSS, JS fundamentals — this exact site is the receipts.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-title">Applied Physics</div>
+          <div class="chip-desc">Vector and force problems for the industrial technologist track.</div>
+        </div>
+        <div class="chip">
+          <div class="chip-title">Video Production</div>
+          <div class="chip-desc">Side quest — learning formats, codecs, editing footage together.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
